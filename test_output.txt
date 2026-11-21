@@ -1,0 +1,12 @@
+=== FULL TEST RUN ===
+[1] Compile check
+    PASS
+[2] Import assistant + converter
+    PASS - assistant engine: init
+    PASS - converter: ready
+[3] Speak English
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import assistant; importlib.reload(assistant); assistant.speak('Testing English output', 'hello')
+                      ^^^^^^^^^
+NameError: name 'importlib' is not defined. Did you forget to import 'importlib'?
